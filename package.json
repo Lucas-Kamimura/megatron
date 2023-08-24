@@ -1,22 +1,17 @@
 {
-  "name": "electron-quick-start",
-  "version": "1.0.0",
-  "description": "A minimal Electron application",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron ."
+  "name": "megatron",
+  "private": "true",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
   },
-  "repository": "https://github.com/electron/electron-quick-start",
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:joaopedropsilva/megatron.git",
+  "author": "joaopedropsilva <83987930+joaopedropsilva@users.noreply.github.com>",
+  "license": "MIT",
   "devDependencies": {
-    "electron": "^25.5.0"
+    "typescript": "^5.1.6"
   }
 }
