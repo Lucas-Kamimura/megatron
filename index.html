@@ -5,16 +5,35 @@
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
     <link href="./styles.css" rel="stylesheet">
-    <title>Megatron</title>
+    <title>Megatron V0.1</title>
   </head>
-  <body>
-    <img src="assets/"/>
-    <h1>Bem vindo ao Megatron</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+  <body style="background: dimgray;">
+    <div style="display: flex; align-items: center; width: 100%;">
+      <img style="width: 5em; height: 3em;" src="assets/Decepticon-Logo.png" alt="Decepticons logo">
+      <h1>Bem vindo ao Megatron</h1>
+      <img style="width: 5em; height: 3em;" src="assets/Decepticon-Logo.png" alt="Decepticons logo">
+    </div>
+    <form>
+      <div class="column">
+        <label for="iterator">Quantidade do Arranjo</label>
+        <input type="number" id="iterator">
+      </div>
+       
+      <div class="column">
+        <label for="frequency">Frequência da consulta na API</label>
+        <input type="number" id="frequency"> 
+      </div>
+      
 
-    <!-- You can also require other files to run in this process -->
+    </form>
+
+
+    <div style="font-size: 15px">
+      We are using Node.js <span id="node-version"></span>,
+      Chromium <span id="chrome-version"></span>,
+      and Electron <span id="electron-version"></span>
+    </div>
+        <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>
   </body>
 </html>
