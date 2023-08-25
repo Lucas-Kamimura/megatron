@@ -17,6 +17,11 @@
   optionalDependencies:
     global-agent "^3.0.0"
 
+"@mdi/font@^7.2.96":
+  version "7.2.96"
+  resolved "https://registry.npmjs.org/@mdi/font/-/font-7.2.96.tgz"
+  integrity sha512-e//lmkmpFUMZKhmCY9zdjRe4zNXfbOIJnn6xveHbaV2kSw5aJ5dLXUxcRt1Gxfi7ZYpFLUWlkG2MGSFAiqAu7w==
+
 "@megatron/backend@file:C:\\Code\\Megatron\\megatron\\packages\\backend":
   version "1.0.0"
   resolved "file:packages/backend"
@@ -26,10 +31,17 @@
 "@megatron/electron-quick-start@file:C:\\Code\\Megatron\\megatron\\packages\\frontend":
   version "1.0.0"
   resolved "file:packages/frontend"
+  dependencies:
+    bootstrap "^5.3.1"
 
 "@megatron/eslint-config@file:C:\\Code\\Megatron\\megatron\\packages\\eslint-config":
   version "1.0.0"
   resolved "file:packages/eslint-config"
+
+"@popperjs/core@^2.11.8":
+  version "2.11.8"
+  resolved "https://registry.npmjs.org/@popperjs/core/-/core-2.11.8.tgz"
+  integrity sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==
 
 "@sindresorhus/is@^4.0.0":
   version "4.6.0"
@@ -191,6 +203,11 @@ boolean@^3.0.1:
   version "3.2.0"
   resolved "https://registry.npmjs.org/boolean/-/boolean-3.2.0.tgz"
   integrity sha512-d0II/GO9uf9lfUHH2BQsjxzRJZBdsjgsBiW4BvhWk/3qoKwQFjIDVN19PfX8F2D/r9PCMTtLWjYVCFrpeYUzsw==
+
+bootstrap@^5.3.1:
+  version "5.3.1"
+  resolved "https://registry.npmjs.org/bootstrap/-/bootstrap-5.3.1.tgz"
+  integrity sha512-jzwza3Yagduci2x0rr9MeFSORjcHpt0lRZukZPZQJT1Dth5qzV7XcgGqYzi39KGAVYR8QEDVoO0ubFKOxzMG+g==
 
 buffer-crc32@~0.2.3:
   version "0.2.13"

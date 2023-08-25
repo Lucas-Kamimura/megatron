@@ -1,39 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang='pt-br'>
   <head>
     <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
-    <link href="./styles.css" rel="stylesheet">
-    <title>Megatron V0.1</title>
+    <link rel="stylesheet" href="./contents/bootstrap/5.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../../node_modules/@mdi/font/css/materialdesignicons.min.css">
+    <title>Megatron V0.2</title>
   </head>
-  <body style="background: dimgray;">
-    <div style="display: flex; align-items: center; width: 100%;">
-      <img style="width: 5em; height: 3em;" src="assets/Decepticon-Logo.png" alt="Decepticons logo">
-      <h1>Bem vindo ao Megatron</h1>
-      <img style="width: 5em; height: 3em;" src="assets/Decepticon-Logo.png" alt="Decepticons logo">
-    </div>
-    <form>
-      <div class="column">
-        <label for="iterator">Quantidade do Arranjo</label>
-        <input type="number" id="iterator">
+  <body style="background: #333333">
+    <div class="w-100 d-flex mt-3">
+      <div class="mx-auto">
+        <img style="width: 5em; height: 3em;" src="assets/Decepticon-Logo-1984-present.png" alt="Decepticons logo">
+        <span style="font-family: ClashGrotesk-Bold,sans-serif; font-weight: bold; color: lightgray">Welcome to Megatron</span>
+        <img style="width: 5em; height: 3em;" src="assets/Decepticon-Logo-1984-present.png" alt="Decepticons logo">
       </div>
-       
-      <div class="column">
-        <label for="frequency">Frequência da consulta na API</label>
-        <input type="number" id="frequency"> 
-      </div>
-      
 
-    </form>
-
-
-    <div style="font-size: 15px">
-      We are using Node.js <span id="node-version"></span>,
-      Chromium <span id="chrome-version"></span>,
-      and Electron <span id="electron-version"></span>
     </div>
+    <div class="mt-4 mx-3">
+      <form>
+        <div class="row">
+          <div class="col-6">
+            <label for="iterator" class="form-label" style="font-family: ClashGrotesk-Bold,monospace; font-weight:400;color: lightgray">Quantidade de consultas</label>
+            <input type="number" class="form-control" id="iterator" aria-describedby="iterator" style="background-color:dimgray; color: lightgray">
+          </div>
+          <div class="col-6">
+            <label for="request velocity" class="form-label" style="font-family: ClashGrotesk-Bold,monospace; font-weight:400;color: lightgray">Velocidade da consulta</label>
+            <input type="number" class="form-control" id="request velocity" style="background-color:dimgray; color: lightgray">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary mt-2">Próxima etapa</button>
+      </form>
+    </div>
+
+
+
         <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
+    <script src="renderer.js"></script>
   </body>
+
 </html>

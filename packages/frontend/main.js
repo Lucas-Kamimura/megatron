@@ -1,6 +1,30 @@
 // Modules to control application life and create native browser window
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow, Menu} = require('electron')
 const path = require('path')
+const template = [
+  {
+    label: 'File',
+    submenu: [
+      { label: 'New', accelerator: 'CmdOrCtrl+N', click: () => { /* Handle new file */ } },
+      { label: 'Open', accelerator: 'CmdOrCtrl+O', click: () => { /* Handle open file */ } },
+      // Other file-related menu items...
+    ]
+  },
+  {
+    label: 'Edit',
+    submenu: [
+      { label: 'Cut', accelerator: 'CmdOrCtrl+X', role: 'cut' },
+      { label: 'Copy', accelerator: 'CmdOrCtrl+C', role: 'copy' },
+      { label: 'Paste', accelerator: 'CmdOrCtrl+V', role: 'paste' },
+      // Other edit-related menu items...
+    ]
+  },
+  // Other menu categories...
+];
+
+const menu = Menu.buildFromTemplate(template);
+Menu.setApplicationMenu(menu);
+
 
 function createWindow () {
   // Create the browser window.

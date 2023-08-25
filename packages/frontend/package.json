@@ -17,6 +17,10 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
+    "@mdi/font": "^7.2.96",
     "electron": "^25.4.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.1"
   }
 }
